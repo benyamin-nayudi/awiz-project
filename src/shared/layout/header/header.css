@@ -1,0 +1,35 @@
+.storybook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsl(var(--border));
+  padding: 15px 20px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.storybook-header svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.storybook-header h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 0 6px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: hsl(var(--foreground));
+}
+
+.storybook-header button + button {
+  margin-left: 10px;
+}
+
+.storybook-header .welcome {
+  margin-right: 10px;
+  color: hsl(var(--muted-foreground));
+  font-size: 14px;
+}
