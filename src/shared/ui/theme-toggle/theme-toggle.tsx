@@ -46,16 +46,14 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
     actualTheme === 'dark' ? 'theme-toggle--dark' : 'theme-toggle--light',
     disabled ? 'theme-toggle--disabled' : '',
     className,
-  ].filter(Boolean).join(' ');
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
-    <div className="theme-toggle-wrapper">
-      {showLabels && (
-        <span className="theme-toggle-label theme-toggle-label--left">
-          Light
-        </span>
-      )}
-      
+    <div className="theme-toggle-wrapper cursor-pointer">
+      {showLabels && <span className="theme-toggle-label theme-toggle-label--left">Light</span>}
+
       <button
         type="button"
         className={baseClasses}
@@ -82,7 +80,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
               <circle cx="12" cy="12" r="5" />
               <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
             </svg>
-            
+
             {/* Moon Icon */}
             <svg
               className="theme-toggle-icon theme-toggle-icon--moon"
@@ -101,11 +99,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
         </div>
       </button>
 
-      {showLabels && (
-        <span className="theme-toggle-label theme-toggle-label--right">
-          Dark
-        </span>
-      )}
+      {showLabels && <span className="theme-toggle-label theme-toggle-label--right">Dark</span>}
     </div>
   );
 };

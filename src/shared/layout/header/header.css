@@ -24,6 +24,14 @@
   color: hsl(var(--foreground));
 }
 
+.dark .storybook-header h1 {
+  color: lightblue;
+}
+
+.light .storybook-header h1 {
+  color: black;
+}
+
 .storybook-header button + button {
   margin-left: 10px;
 }
